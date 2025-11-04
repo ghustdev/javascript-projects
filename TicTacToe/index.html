@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joga da velha</title>
+
+    <link rel="icon" href="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQdR5hPxiKG7MuJFuIe1lbrqandKE2QP5JzdrE4Dt6gnzu6Xnc0dCyK97yTeghVzkok">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <dialog> 
+
+    </dialog>
+    
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <table>
+            <tr>
+                <td style="border-left: 0;
+    border-top: 0;" onclick="fillButton(this)" class="button"></td>
+                <td style="border-top: 0;" onclick="fillButton(this)" class="button"></td>
+                <td onclick="fillButton(this)" class="button" style="border-right: 0;
+    border-top: 0;"></td>
+            </tr>
+            <tr>
+                <td style="border-left: 0;" onclick="fillButton(this)" class="button"></td>
+                <td onclick="fillButton(this)" class="button"></td>
+                <td style="border-right: 0;" onclick="fillButton(this)" class="button"></td>
+            </tr>
+            <tr>
+                <td style="border-left: 0;
+    border-bottom: 0;" onclick="fillButton(this)" class="button"></td>
+                <td style="border-bottom: 0;" onclick="fillButton(this)" class="button"></td>
+                <td style="border-right: 0;
+    border-bottom: 0;" onclick="fillButton(this)" class="button"></td>
+            </tr>
+        </table>
+        <div class="informations">
+            <div id="player">Vez do Jogador: X</div>
+            <h3>Pontuação:</h3>
+            <div id="scoreX">Jogador X: 0</div>
+            <div id="scoreO">Jogador O: 0</div>
+        </div>
+    </div>
+</body>
+</html>
