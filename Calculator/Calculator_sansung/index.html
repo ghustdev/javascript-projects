@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="images.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <div class="resultato">
+                <p id="result"></p>
+                <p id="final"></p>
+            </div>
+            <div class="space">
+                <a href="#"></a>
+            </div>
+            <div class="conteiner-operadores">
+                <div class="line">
+                    <button id="C" class="operador" onclick="limparResultado()">C</button>
+                    <button onclick="mostrarResultado()" id="parentese" class="operador color">()</button>
+                    <button id="porcentagem" class="operador color">%</button>
+                    <button id="dividir" onclick="mostrarResultado(' / ')" class="operador color"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="line">
+                    <button id="sete" class="operador" onclick="mostrarResultado('7')">7</button>
+                    <button id="oito" class="operador" onclick="mostrarResultado('8')">8</button>
+                    <button id="nove" class="operador" onclick="mostrarResultado('9')">9</button>
+                    <button id="multiplicar" class="operador color" onclick="mostrarResultado(' x ')"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="line">
+                    <button id="quatro" class="operador" onclick="mostrarResultado('4')">4</button>
+                    <button id="cinco" class="operador" onclick="mostrarResultado('5')">5</button>
+                    <button id="seis" class="operador" onclick="mostrarResultado('6')">6</button>
+                    <button id="subtrair" class="operador color" onclick="mostrarResultado(' - ')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="line">
+                    <button id="um" class="operador" onclick="mostrarResultado('1')">1</button>
+                    <button id="dois" class="operador" onclick="mostrarResultado('2')">2</button>
+                    <button id="tres" class="operador" onclick="mostrarResultado('3')">3</button>
+                    <button id="soma" class="operador color" onclick="mostrarResultado(' + ')"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="line">
+                    <button id="sinais" class="operador">+/-</button>
+                    <button id="zero" class="operador" onclick="mostrarResultado('0')">0</button>
+                    <button class="operador" id="virgula" onclick="mostrarResultado('.')">,</button>
+                    <button id="igual" class="operador" onclick="mostrarResultado('=')"><i class="fa-solid fa-equals"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

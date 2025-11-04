@@ -1,0 +1,16 @@
+{
+  "name": "5_weather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "type":"module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
