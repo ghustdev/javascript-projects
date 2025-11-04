@@ -1,46 +1,72 @@
-const red = document.getElementById('red');
-const yellow = document.getElementById('yellow');
-const green = document.getElementById('green');
+const red_dom = document.getElementById('red');
+const yellow_dom = document.getElementById('yellow');
+const green_dom = document.getElementById('green');
 
 const clock = document.querySelector('.clock');
 
+const red = '#ff2020';
+const yellow = '#e4e400';
+const green = '#0dc300';
+const black = '#000';
+
+function alterColor(color) {
+    let element = `${color}` + `_dom`;
+    element.style.background = color;
+    element.style.boxShadow = `0 0 30px ${color}`;
+    clock.style.boxShadow = `0 0 40px ${color}`;
+    clock.style.border = `4px solid ${color}`;
+    clock.style.color = `${color}`;
+}
+
+function resetBlack() {
+    yellow_dom.style.background = '#000';
+    yellow_dom.style.boxShadow = '0 0 10px #000';
+    green_dom.style.background = '#000';
+    green_dom.style.boxShadow = '0 0 10px #000';
+}
 
 function changeColor(i) {
     if (i==0) {
-        red.style.background = '#ff2020';
-        red.style.boxShadow = '0 0 30px #ff2020';
-        clock.style.boxShadow = '0 0 40px #ff2020';
-        clock.style.border = '4px solid #ff2020';
-        clock.style.color = '#ff2020';
+        // red_dom.style.background = '#ff2020';
+        // red_dom.style.boxShadow = '0 0 30px #ff2020';
+        // clock.style.boxShadow = '0 0 40px #ff2020';
+        // clock.style.border = '4px solid #ff2020';
+        // clock.style.color = '#ff2020';
 
-        yellow.style.background = '#000';
-        yellow.style.boxShadow = '0 0 10px #000';
-        green.style.background = '#000';
-        green.style.boxShadow = '0 0 10px #000';
+        alterColor(red);
+
+        yellow_dom.style.background = '#000';
+        yellow_dom.style.boxShadow = '0 0 10px #000';
+        green_dom.style.background = '#000';
+        green_dom.style.boxShadow = '0 0 10px #000';
     }
     else if (i==2) {
-        yellow.style.background = '#e4e400';
-        yellow.style.boxShadow = '0 0 30px #e4e400';
-        clock.style.boxShadow = '0 0 40px #e4e400';
-        clock.style.border = '4px solid #e4e400';
-        clock.style.color = '#e4e400';
+        // yellow_dom.style.background = '#e4e400';
+        // yellow_dom.style.boxShadow = '0 0 30px #e4e400';
+        // clock.style.boxShadow = '0 0 40px #e4e400';
+        // clock.style.border = '4px solid #e4e400';
+        // clock.style.color = '#e4e400';
 
-        red.style.background = '#000';
-        red.style.boxShadow = '0 0 10px #000';
-        green.style.background = '#000';
-        green.style.boxShadow = '0 0 10px #000';
+        alterColor(yellow);
+
+        red_dom.style.background = '#000';
+        red_dom.style.boxShadow = '0 0 10px #000';
+        green_dom.style.background = '#000';
+        green_dom.style.boxShadow = '0 0 10px #000';
     }
     else if (i==1) {
-        green.style.background = '#0dc300';
-        green.style.boxShadow = '0 0 30px #0dc300';
-        clock.style.boxShadow = '0 0 40px #0dc300';
-        clock.style.border = '4px solid #0dc300';
-        clock.style.color = '#0dc300';
+        // green_dom.style.background = '#0dc300';
+        // green_dom.style.boxShadow = '0 0 30px #0dc300';
+        // clock.style.boxShadow = '0 0 40px #0dc300';
+        // clock.style.border = '4px solid #0dc300';
+        // clock.style.color = '#0dc300';
 
-        yellow.style.background = '#000';
-        yellow.style.boxShadow = '0 0 10px #000';
-        red.style.background = '#000';
-        red.style.boxShadow = '0 0 10px #000';
+        alterColor(green);
+
+        yellow_dom.style.background = '#000';
+        yellow_dom.style.boxShadow = '0 0 10px #000';
+        red_dom.style.background = '#000';
+        red_dom.style.boxShadow = '0 0 10px #000';
     }
 }
 
