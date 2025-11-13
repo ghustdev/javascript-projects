@@ -3,6 +3,15 @@ let nome = "Ana"
 let idade = 25
 const PI = 3.1415
 
+// console.log(nome, idade);
+
+// Desestruturação
+[nome, idade] = ["Gustavo", 16]
+const [new_nome ,new_idade] = ["Gustavo", 16]
+
+console.log(nome, idade);
+console.log(new_nome, new_idade);
+
 
 //          Dados primitivos
 let texto = "Olá";       // string
@@ -16,7 +25,7 @@ let grande = 9007199254740991n; // BigInt
 
 //          Estruturas de controle
 if (idade >= 18) {
-    console.log("Maior que idade");
+    console.log("Maior de idade");
 } else {
     console.log("Menor de idade");
 }
@@ -39,15 +48,19 @@ const mult = (a, b) => a*b;
 
 //          Objetos (json / dicionário -> key and value)
 const pessoa = {
-    nome: "Gustavo",
+    name: "Gustavo",
     idade: 30,
     falar() {
-        console.log(`Meu nome é ${this.nome}`);
+        console.log(`Meu nome é ${this.name}`);
     },
     altura: 1.75
 }
 
 pessoa.falar();
+
+// Atribuição por desestruturação
+const { name } = pessoa
+console.log(name)
 
 
 //          Arrays e métodos
@@ -82,7 +95,7 @@ rex.falar();
 
 //          Assincronismo
 // Callbacks
-setTimeout(() => console.log("Depois de 10s", 10000));
+// setTimeout(() => console.log("Depois de 10s", 10000));
 console.log("Executei antes");
 
 // Promisses -> requisições, assincronos (não espera nada) 
@@ -117,3 +130,6 @@ async function carregarUser() {
 }
 
 carregarUser();
+
+
+//          
