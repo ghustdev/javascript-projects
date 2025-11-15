@@ -1,0 +1,65 @@
+🧠 1. O QUE É JAVASCRIPT?
+
+JavaScript (JS) é uma linguagem de programação interpretada, multi-paradigma e dinamicamente tipada, criada em 1995 por Brendan Eich para dar interatividade às páginas web.
+
+Hoje, JS:
+
+Roda no navegador (lado do cliente) e também no servidor (Node.js).
+
+É a linguagem da Web, junto com HTML e CSS.
+
+Evoluiu para uma das linguagens mais poderosas e universais do mundo.
+
+🌍 2. POR QUE USAR JAVASCRIPT?
+a) Universalidade
+
+É a única linguagem nativa dos navegadores — todo site, app web ou front-end depende de JavaScript.
+
+b) Interatividade
+
+JS manipula o DOM (Document Object Model) — a estrutura de uma página — permitindo animações, eventos, formulários dinâmicos, pop-ups, etc.
+
+c) Full Stack
+
+Com o surgimento do Node.js, JS passou a ser usado também no back-end, permitindo usar a mesma linguagem em todo o sistema.
+
+d) Ecossistema gigantesco
+
+Bibliotecas e frameworks como React, Vue, Angular, Next.js, Express, etc.
+
+NPM (Node Package Manager) — o maior repositório de pacotes do mundo.
+
+Suporte a APIs modernas, WebSockets, IA (TensorFlow.js), automação, robótica, etc.
+
+⚙️ 3. ONDE O JAVASCRIPT É USADO?
+Área	Exemplos
+Front-end Web	React, Vue, Angular
+Back-end Web	Node.js, Express
+Aplicativos Mobile	React Native, Ionic
+Desktop Apps	Electron (VSCode, Discord)
+Automação / IA / IoT	TensorFlow.js, Johnny-Five, Deno
+Games / Gráficos	Phaser.js, Three.js, Babylon.js
+🧩 4. COMO O JAVASCRIPT FUNCIONA
+a) Interpretado
+
+O navegador (ou o Node.js) lê e executa o código linha a linha, sem precisar compilar antes.
+
+b) Single-threaded
+
+Tem apenas uma thread principal, mas com event loop e assincronismo (callbacks, promises, async/await), consegue lidar com várias tarefas simultâneas de forma eficiente.
+
+c) Event-driven
+
+JS reage a eventos (como cliques, requisições, timers). Isso o torna ideal para interfaces e sistemas reativos.
+
+🧭 5. PARADIGMAS DE PROGRAMAÇÃO DO JAVASCRIPT
+
+JavaScript é multi-paradigma, ou seja, permite diferentes estilos de programação:
+
+Paradigma	Descrição	Exemplo
+Imperativo	Instruções passo a passo.	for(let i=0; i<10; i++) console.log(i);
+Funcional	Funções puras e imutabilidade.	[1,2,3].map(x => x * 2)
+Orientado a Objetos (OOP)	Classes, herança, encapsulamento.	class Pessoa { constructor(n){this.nome=n;} }
+Assíncrono	Programação não bloqueante.	await fetch('/api/data')
+
+🧠 Paradigma predominante: Funcional + Orientado a Objetos prototipal.
